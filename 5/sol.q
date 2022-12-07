@@ -2,7 +2,7 @@
 
 .aoc.fileSplit:.input.f?"";
 .aoc.stackNs:s where not null s:"J"$" " vs .input.f[.aoc.fileSplit-1];
-.aoc.makeStacks:{.aoc.stacks:stackNs!`$''trim flip @[;1]each' 4 cut' .input.f[til -1+.aoc.fileSplit]};
+.aoc.makeStacks:{.aoc.stacks:.aoc.stackNs!`$''trim flip @[;1]each' 4 cut' .input.f[til -1+.aoc.fileSplit]};
 
 .aoc.move:{[fn;c;f;t] 
     c:c&count .aoc.stacks[f];
